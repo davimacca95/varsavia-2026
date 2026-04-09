@@ -1232,8 +1232,6 @@ placeLayer.addLayer(createMarker(p));
 if(curDay!=='all'){
 var d=days.find(function(x){return x.day===parseInt(curDay);});
 if(d)drawRoute(d);
-}else{
-days.forEach(function(d){drawRoute(d);});
 }
 updateCounts();
 if(placeLayer.getLayers().length>0){
