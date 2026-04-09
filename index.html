@@ -1334,7 +1334,7 @@ document.querySelector('.map-section').appendChild(metroBtn);
 if(navigator.geolocation){
 navigator.geolocation.watchPosition(function(pos){
 userPos={lat:pos.coords.latitude,lng:pos.coords.longitude};
-},{},{ enableHighAccuracy:true});
+},function(){},{ enableHighAccuracy:true});
 }
 
 buildZoneBtns();
