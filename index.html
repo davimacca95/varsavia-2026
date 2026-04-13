@@ -66,7 +66,7 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f5f5f5;c
 .day-route-label{background:#fff;border:2px solid #444;border-radius:50%;width:22px;height:22px;text-align:center;line-height:22px;font-size:11px;font-weight:700}
 @media(max-width:600px){.header h1{font-size:1.15em}.map-section{height:45vh}.alt-options{grid-template-columns:1fr}}
 </style>
-<script>if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(w){w.unregister()})});caches.keys().then(function(c){c.forEach(function(n){caches.delete(n)})})}</script>
+<script>try{if('serviceWorker' in navigator&&location.protocol!=='file:'){navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(w){w.unregister()})});caches.keys().then(function(c){c.forEach(function(n){caches.delete(n)})})}}catch(e){}</script>
 </head>
 <body>
 <div class="header">
