@@ -67,7 +67,7 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f5f5f5;c
 @media(max-width:600px){.header h1{font-size:1.15em}.map-section{height:45vh}.alt-options{grid-template-columns:1fr}}
 </style>
 <script>if('serviceWorker' in navigator){navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(w){w.unregister()})});caches.keys().then(function(c){c.forEach(function(n){caches.delete(n)})})}</script>
-</head>
+<link rel="manifest" href="manifest.json"><meta name="apple-mobile-web-app-capable" content="yes"><link rel="apple-touch-icon" href="icon-192.png"><script>if("serviceWorker" in navigator)navigator.serviceWorker.register("sw.js")</script></head>
 <body>
 <div class="header">
 <h1>🇵🇱 Varsavia — 5–7 Giugno 2026</h1>
@@ -150,18 +150,23 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f5f5f5;c
 </details>
 </div>
 
-<div class="event sight"><span class="time">14:30 – 15:30</span> 🏰 Centro Storico (Stare Miasto) — Piazza del Mercato, Barbacane, Cattedrale
-<details class="offline-info"><summary>Info</summary>
-<div class="info-box">📍 Rynek Starego Miasta · GRATIS · UNESCO dal 1980 · Ricostruito dopo distruzione totale WWII · Sirena di Varsavia nella piazza · Barbacane del 1540 collega Città Vecchia e Nuova · Cattedrale di San Giovanni: tombe di Sienkiewicz, ingresso gratuito</div>
-</details>
+<div class="alt-fork">
+<div class="alt-options">
+<div class="alt-option opt-a">
+<h4><span class="opt-badge">A</span> 🏰 Centro Storico a piedi</h4>
+<div class="alt-item"><span class="alt-icon">🏰</span> <strong>14:30 – 15:30</strong> — Stare Miasto: Piazza del Mercato, Barbacane, Cattedrale, mura medievali</div>
+<div class="alt-item"><span class="alt-icon">🚶</span> <strong>15:30 – 15:45</strong> — Passeggiata Krakowskie Przedmieście verso sud</div>
+<div class="alt-note">📍 Fai-da-te · A piedi dal Castello</div>
 </div>
-
-<div class="event sight"><span class="time">15:30 – 15:45</span> 🚶 Passeggiata Krakowskie Przedmieście (Via Reale) verso sud
-<details class="offline-info"><summary>Info</summary>
-<div class="info-box">Palazzo Presidenziale, Università, Chiesa di Santa Croce (cuore di Chopin), Hotel Bristol · Pedonale nel weekend</div>
-</details>
+<div class="alt-option opt-b">
+<h4><span class="opt-badge">B</span> 🏗️ Free Tour Varsavia Comunista</h4>
+<div class="alt-item"><span class="alt-icon">🎟️</span> <strong>14:30 – 16:30</strong> — PRENOTATO (Ref: A38258141) · Walkative Tour · Inglese · ~2h
+<details class="offline-info"><summary>Dettagli tour comunista</summary>
+<div class="info-box"><strong>Ref: A38258141</strong> · Civitatis/Walkative Tour<br>📍 Ritrovo: Chiesa di Tutti i Santi, Plac Grzybowski 3/5 (arrivare 15 min prima!)<br>🟡 Riconoscere la guida: ombrello giallo<br>📞 +48 513 875 814<br><br><strong>Itinerario:</strong> Ex quartier generale partito comunista → Monumento alla Libertà di Espressione → Palazzo della Scienza e della Cultura (dono di Stalin) → Muro Orientale + movimento Solidarność<br><br>💰 Free tour — mancia consigliata 10-15€/persona<br>⚠️ Min 4 partecipanti, altrimenti vi contattano con alternative</div></details></div>
+<div class="alt-note">📍 Plac Grzybowski · Ombrello giallo · Mancia 10-15€</div>
 </div>
-
+</div>
+</div>
 <div class="event transport"><span class="time">15:45 – 16:15</span> 🚌 Bus 116/180 da Nowy Świat → Łazienki Park (~10 min)
 <details class="offline-info"><summary>Info</summary>
 <div class="info-box">Fermata Łazienki Królewskie · Oppure 20 min a piedi da Nowy Świat verso sud</div>
@@ -219,15 +224,25 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f5f5f5;c
 </details>
 </div>
 
-<div class="event transport"><span class="time">09:15 – 09:35</span> 🚇 Metro M1 Politechnika → Świętokrzyska, poi M2 → Rondo Daszyńskiego
+<div class="alt-fork">
+<div class="alt-options">
+<div class="alt-option opt-a">
+<h4><span class="opt-badge">A</span> 🏛️ Museo Insurrezione</h4>
+<div class="alt-item"><span class="alt-icon">🚇</span> <strong>09:15 – 09:35</strong> — Metro M1 Politechnika → Świętokrzyska → M2 → Rondo Daszyńskiego</div>
+<div class="alt-item"><span class="alt-icon">🏛️</span> <strong>09:45 – 12:30</strong> — Museo dell’Insurrezione di Varsavia (Muzeum Powstania Warszawskiego)
+<details class="offline-info"><summary>Museo Insurrezione</summary>
+<div class="info-box">Uno dei musei più importanti di Varsavia. Racconta l’insurrezione del 1944 con installazioni interattive, filmati, ricostruzioni. Biglietto: 25 PLN (gratis la domenica!). Aperto sab 10:00-18:00. Prevedere 2-3h. Metro: Rondo Daszyńskiego (M2).</div></details></div>
+<div class="alt-note">📍 Metro M2 Rondo Daszyńskiego · 25 PLN · 2-3h</div>
 </div>
-
-<div class="event sight"><span class="time">09:45 – 12:30</span> 🏛️ Museo dell'Insurrezione di Varsavia (Muzeum Powstania Warszawskiego)
-<details class="offline-info"><summary>Info</summary>
-<div class="info-box">📍 ul. Grzybowska 79 · 35 PLN adulto · Chiuso martedì · Lun-Dom 10-18 · Audioguida 13 PLN · Bombardiere B-24 replica, fogne ricostruite, filmati d'epoca · Uno dei musei più potenti d'Europa · 2-3 ore minimo · Metro: Rondo Daszyńskiego (M2) ~800m</div>
-</details>
+<div class="alt-option opt-b">
+<h4><span class="opt-badge">B</span> 🚶 Free Tour di Varsavia (IT)</h4>
+<div class="alt-item"><span class="alt-icon">🎟️</span> <strong>10:00 – 12:00</strong> — PRENOTATO (Ref: A38258164) · Guida in ITALIANO · ~2h
+<details class="offline-info"><summary>Dettagli free tour</summary>
+<div class="info-box"><strong>Ref: A38258164</strong> · Civitatis / Cracovia Walking Tours<br>📍 Ritrovo: Varsavia Taras, Krakowskie Przedmieście 68 (accanto Chiesa di Sant’Anna, vicino Colonna di Sigismondo). Arrivare 15 min prima!<br>🤍 Riconoscere la guida: ombrello bianco<br>📞 0048 501 928 880<br><br><strong>Itinerario:</strong> Palazzo Reale → Barbacane e mura medievali → Piazza del Mercato → Chiesa di San Casimiro → Monumento dell’Insurrezione<br><br>💰 Free tour — mancia consigliata 10-15€/persona<br>⚠️ Min 5 partecipanti · 9.6/10 su Civitatis (1.471 recensioni!)</div></details></div>
+<div class="alt-note">📍 Krakowskie Przedmieście 68 · Ombrello bianco · IN ITALIANO!</div>
 </div>
-
+</div>
+</div>
 <div class="event food"><span class="time">12:30 – 13:15</span> 🍽️ Pranzo veloce — Zapiexy Luxusowe (zapiekanki polacche)
 <details class="offline-info"><summary>Info</summary>
 <div class="info-box">📍 Widok 19 (Rotunda) · Zapiekanki = baguette pizza polacca · Da 10 PLN mezza, 30 PLN carica · ⭐ 4.3 Google · Metro: Centrum (M1) / Świętokrzyska · Aperto fino alle 2 ven-sab</div>
@@ -303,24 +318,23 @@ body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:#f5f5f5;c
 </details>
 </div>
 
-<div class="event sight"><span class="time">09:30 – 10:15</span> 🏙️ Palazzo della Cultura e della Scienza — terrazza panoramica 30° piano
-<details class="offline-info"><summary>Info</summary>
-<div class="info-box">📍 Plac Defilad 1 · ~20 PLN adulto · Aperto tutti i giorni 10-20 · "Regalo" di Stalin, 237m, completato 1955 · Terrazza a 114m, ascensore in 19 secondi · Vista 360° su Varsavia · 30-45 min · Metro: Centrum (M1) / Świętokrzyska (M1/M2)</div>
-</details>
+<div class="alt-fork">
+<div class="alt-options">
+<div class="alt-option opt-a">
+<h4><span class="opt-badge">A</span> 🏙️ Palazzo Cultura + Via Reale</h4>
+<div class="alt-item"><span class="alt-icon">🏙️</span> <strong>09:30 – 10:15</strong> — Palazzo della Cultura e della Scienza — terrazza panoramica 30° piano</div>
+<div class="alt-item"><span class="alt-icon">🚶</span> <strong>10:15 – 10:45</strong> — Passeggiata Nowy Świat & Krakowskie Przedmieście</div>
+<div class="alt-item"><span class="alt-icon">⛪</span> <strong>10:45 – 11:30</strong> — Chiesa di Santa Croce (cuore di Chopin) & Via Reale</div>
+<div class="alt-note">📍 Fai-da-te · Palazzo + centro storico</div>
 </div>
-
-<div class="event sight"><span class="time">10:15 – 10:45</span> 🚶 Passeggiata Nowy Świat & Krakowskie Przedmieście
-<details class="offline-info"><summary>Info</summary>
-<div class="info-box">Via elegante con palazzi neoclassici · Pasticceria A. Blikle (dal 1869) · Piazza delle Tre Croci · Pedonale la domenica</div>
-</details>
+<div class="alt-option opt-b">
+<h4><span class="opt-badge">B</span> 🕯️ Free Tour Quartiere Ebraico</h4>
+<div class="alt-item"><span class="alt-icon">🎟️</span> <strong>10:00 – 12:30</strong> — PRENOTATO (Ref: A38258196) · Walkative Tour · Inglese · ~2.5h
+<details class="offline-info"><summary>Dettagli tour ebraico</summary>
+<div class="info-box"><strong>Ref: A38258196</strong> · Civitatis/Walkative Tour<br>📍 Ritrovo: Chiesa di Tutti i Santi, Plac Grzybowski 3/5. Arrivare 10 min prima!<br>🟡 Riconoscere la guida: ombrello giallo<br>📞 +48 513 875 814<br><br><strong>Itinerario:</strong> Ex ghetto di Varsavia → Museo POLIN (esterno) → Umschlagplatz → Prigione di Pawiak → Monumento agli Eroi del Ghetto → Storie di Irena Sendler e Isaac B. Singer<br><br>💰 Free tour — mancia consigliata 10-15€/persona<br>⚠️ Min 4 partecipanti · 9.3/10 su Civitatis (3.352 recensioni!)<br><br>💡 Se fate questo tour, potete saltare il POLIN museum (Day 2) o visitarlo dopo con più contesto!</div></details></div>
+<div class="alt-note">📍 Plac Grzybowski · Ombrello giallo · Ghetto + storia ebraica</div>
 </div>
-
-<div class="event sight"><span class="time">10:45 – 11:30</span> ⛪ Chiesa di Santa Croce (cuore di Chopin) & Via Reale
-<details class="offline-info"><summary>Info</summary>
-<div class="info-box">📍 Krakowskie Przedmieście 3 · GRATIS · Il cuore di Fryderyk Chopin è conservato in un pilastro · Chiesa barocca del XVII secolo · Monumento a Copernico davanti · Metro: Nowy Świat-Uniwersytet (M2)</div>
-</details>
 </div>
-
 <div class="event food"><span class="time">11:30 – 12:30</span> 🍽️ Pranzo alla Hala Koszyki — food hall con cucina polacca e internazionale
 <details class="offline-info"><summary>Info</summary>
 <div class="info-box">📍 Koszykowa 63 · Mercato storico restaurato, 20+ bancarelle · Pierogi, birra artigianale, street food · 20-50 PLN/persona · ⭐ 4.4 Google · Metro: Politechnika (M1) · Perfetto per gruppi con gusti diversi</div>
