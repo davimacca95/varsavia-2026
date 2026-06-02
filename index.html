@@ -1335,6 +1335,7 @@ return c[subcatToMacro[s]]||"#C1C1C1";
 
 var map=L.map('map',{zoomControl:true}).setView([52.2370,21.0170],13);
 L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{attribution:'&copy; OSM &copy; CARTO',maxZoom:19}).addTo(map);
+setTimeout(function(){try{map.invalidateSize()}catch(e){}},300);window.addEventListener('load',function(){try{map.invalidateSize()}catch(e){}});
 
 var placeLayer=L.layerGroup().addTo(map);
 var routeLayer=L.layerGroup().addTo(map);
