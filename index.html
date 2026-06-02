@@ -1410,8 +1410,6 @@ var plannedDays = {
 function getPlannedDays(p){var k=Math.round(p.lat*10000)/10000+','+Math.round(p.lng*10000)/10000;return plannedDays[k]||[];}
 
 function subcatIcon(s){var m={"Ristoranti":"🍽️","Caffè":"☕","Pierogi":"🥟","Bar Mleczny":"🍲","Internazionale":"🌍","Dolci":"🍰","Bar/Birra":"🍺","Street Food":"🍢","Monumenti":"🏛️","Musei":"🖼️","Parchi":"🌳","Hotel":"🏨"};return m[s]||"📌"};
-return m[s]||"📌";
-}
 
 function macroColor(s){
 var c={"Visite":"#A8C4D8","Cibo":"#DEC49A","Dolci":"#F1B792","Shopping":"#E5DE92","Hotel":"#C4A8C4","Altro":"#C1C1C1"};
